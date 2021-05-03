@@ -7,25 +7,49 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Asynchronous JavaScript</title>
+    <style>
+      <style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+</style>
+    </style>
   </head>
   <body>
+    <div class="card">
+      <h2 class="h1">COUNTRY INFO</h2>
+      
+      <form class="frm">
+        
+        <input type="text"  name="fname" id="val" placeholder="country name" />
+      </form>
+
+      <div class="b" >
+        <button class="btn" onclick="getvalue()">Submit</button>
+      </div>
+    </div>
+
     <main class="container">
       <div class="countries">
-        <!--
-        <article class="country">
-          <img class="country__img" src="" />
-          <div class="country__data">
-            <h3 class="country__name">COUNTRY</h3>
-            <h4 class="country__region">REGION</h4>
-            <p class="country__row"><span>👫</span>POP people</p>
-            <p class="country__row"><span>🗣️</span>LANG</p>
-            <p class="country__row"><span>💰</span>CUR</p>
-          </div>
-        </article>
-        -->
+
       </div>
-      <!-- <button class="btn-country">Where am I?</button> -->
+
       <div class="images"></div>
     </main>
+        
+      <p class="p1">PLEASE REFRESH TO ENTER AGAIN</p>
+  
   </body>
+
 </html>
